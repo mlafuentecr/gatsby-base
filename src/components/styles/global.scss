@@ -1,0 +1,96 @@
+@import './reset';
+@import './menus';
+@import './tabs';
+@import './utilities';
+@import './variables';
+
+
+/*<!--=============== GENERAL STYLES  ===============-->*/
+
+html {
+    font-family: 'Lato', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/*<!--=============== INDEX  PAGE ===============-->*/
+/* || FOOTER*/
+
+
+/*<!--=============== Internal  PAGES ===============-->*/
+
+
+/*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/
+
+
+/*<!--=============== IOS DEVICES ===============-->*/
+
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+
+}
+
+@supports not (-webkit-touch-callout: none) {
+    /* CSS for other than iOS devices */
+
+}
+
+
+/* --------- Desktop  si es amyor que ipad 780px  ------ */
+@media only screen and (min-width: $ipad) {
+    
+}
+
+
+/* ----------- laptops si es mas grande que ipad pero heigh ----------- */
+
+@media only screen and (min-width: $ipad) and (max-height: 970px) {
+   
+}
+
+
+
+
+
+
+/* ----------- iPad in landscape ----------- */
+
+// @media only screen and (max-width: 778px) {
+@media only screen and (max-device-width: $ipad) and (orientation: landscape) {
+  
+}
+
+
+/* ----------- smaller than 360px ----------- */
+
+@media only screen and (min-device-width: 360px) {
+
+    /*<!--=============== IOS DEVICES ===============-->*/
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */
+    
+    }
+    /*<!--=============== NOT IOS DEVICES ===============-->*/
+    @supports not (-webkit-touch-callout: none) {
+        /* CSS for other than iOS devices */
+      
+    }
+}
+
+//When keyboard is present hide slideshow
+@media screen and (max-width: $ipad) and (max-height: 450px) {
+ 
+}
+
