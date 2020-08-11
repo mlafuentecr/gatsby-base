@@ -1,9 +1,15 @@
 import React from "react"
 
 const Footer = props => {
-  <footer >
-    <div className="container">footer</div>
-  </footer>
+  return (
+    <footer>
+      <div class="footer">
+        <div class="container">
+          footer
+        </div>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer

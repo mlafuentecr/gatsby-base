@@ -1,8 +1,7 @@
 @import './reset';
 @import './menus';
-@import './tabs';
-@import './utilities';
 @import './variables';
+@import './headline';
 
 
 /*<!--=============== GENERAL STYLES  ===============-->*/
@@ -14,6 +13,13 @@ html {
     scroll-behavior: smooth;
     height: 100%;
 }
+#___gatsby, #gatsby-focus-wrapper, .wrapper{
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     height: 100%;
@@ -22,18 +28,45 @@ body {
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
 }
+.container {
+    width: $standard;
+    margin: auto;
+    padding: 0px 15px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  
+}
+.header .logo {
+    line-height: 100px;
+    max-width: 200px;
+    -webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+}
 
 
+.footer {
+    background-color: #222;
+    padding: 85px 0 67px;
+    color: #fff;
+}
+main{
+    display: flex;
+    flex: 1;
+}
 
-/*<!--=============== INDEX  PAGE ===============-->*/
-/* || FOOTER*/
+.mainText{
 
-
-/*<!--=============== Internal  PAGES ===============-->*/
-
+    flex-direction: column;
+    position: relative;
+    padding: 90px 15px;
+}
 
 /*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/
-
 
 /*<!--=============== IOS DEVICES ===============-->*/
 
@@ -50,14 +83,16 @@ body {
 
 /* --------- Desktop  si es amyor que ipad 780px  ------ */
 @media only screen and (min-width: $ipad) {
-    
+    .container {
+        width: $laptop;
+    } 
 }
 
 
 /* ----------- laptops si es mas grande que ipad pero heigh ----------- */
 
 @media only screen and (min-width: $ipad) and (max-height: 970px) {
-   
+
 }
 
 

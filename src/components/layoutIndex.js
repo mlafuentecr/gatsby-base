@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Header from './header'
 import Footer from './footer'
-import css from './styles/global'
+import './styles/global.css'
 import SliderIndex from '../components/SliderIndex'
 
-const LayoutIndex = props => {
-  
-
+const LayoutIndex = ({ children }) => {
   return (
       <div className={`pgindex wrapper`}   >
-        <Header/>
+        <Header logoUrl='/logo.jpg' siteTitle='' />
         <SliderIndex />
+        <main>{children}</main>
         <Footer/>
       </div>
   )
