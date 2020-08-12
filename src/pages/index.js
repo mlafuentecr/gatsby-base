@@ -34,7 +34,7 @@ const IndexPage = props => {
           </div>
       </div>
 
-      <Curve  classname="color1" />
+      <Curve  classname="color1 hr" />
 
 
         <div className="section ">
@@ -61,7 +61,7 @@ const IndexPage = props => {
           </div>
       </div>
       
-        {/* <Curve  classname="color2" /> */}
+        {/* <Curve  classname="color2 hr" /> */}
        
       <div className="section fullBox">
         <div className="wrap">

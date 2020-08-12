@@ -16,6 +16,38 @@ h1{
 h2{
     color: $principalColor;
 }
+
+#scrollDiv {
+    height: 25px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+    width: 100%;
+    
+    justify-content: right;
+}
+#scrollTop {
+    background: #333;
+    width: 40px;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    pointer-events: auto;
+    opacity: .9;
+    &:hover{
+        background: $menuHover; 
+    }
+}
+.hide{display: none;}
+.show{display: flex;}
+
+.hr{
+    overflow: hidden;
+}
+
 .circleIcon {
     width: 100px;
     height: 100px;
@@ -30,6 +62,10 @@ h2{
         fill: white;
     }
 }
+
+
+
+
 html {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     font-weight: 300;

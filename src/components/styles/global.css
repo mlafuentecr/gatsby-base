@@ -1105,6 +1105,52 @@ h2 {
   color: #E70F0F;
 }
 
+#scrollDiv {
+  height: 25px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#scrollTop {
+  background: #333;
+  width: 40px;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  pointer-events: auto;
+  opacity: .9;
+}
+
+#scrollTop:hover {
+  background: #a579eb;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hr {
+  overflow: hidden;
+}
+
 .circleIcon {
   width: 100px;
   height: 100px;
