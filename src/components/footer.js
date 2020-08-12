@@ -3,8 +3,8 @@ import React from "react"
 const Footer = props => {
   return (
     <footer>
-      <div class="footer">
-        <div class="container">
+      <div className="footer">
+        <div className="container">
           footer
         </div>
       </div>

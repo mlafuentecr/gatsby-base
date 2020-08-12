@@ -701,10 +701,8 @@ pre tt:after {
 :root {
   --principalColor: #E70F0F;
   --principalColorHigh: #c25850;
-  --menuColor: purple;
   --secondColor: black;
   --gray: #767676;
-  --menuBackground:  white;
   --menuFontColor:  black;
   --fontSizeBigX: 1.2rem;
   --fontSizeBig: 1rem;
@@ -736,6 +734,84 @@ pre tt:after {
 .header-wrap .logo img {
   padding: 0px;
   margin: 0px;
+}
+
+.openDraw #mainnav-mobi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85vw;
+  -webkit-transform: translateX(20vw);
+          transform: translateX(20vw);
+}
+
+.openDraw .btn-menu span {
+  opacity: 0;
+}
+
+.openDraw .btn-menu:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.openDraw .btn-menu:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#mainnav-mobi {
+  margin: 0 auto;
+  width: 0vw;
+  -webkit-transition: width 0.2s, height 0.6s;
+  transition: width 0.2s, height 0.6s;
+  position: absolute;
+  background-color: #2a0d58;
+  z-index: 1000;
+  top: 100px;
+}
+
+#mainnav-mobi ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#mainnav-mobi ul li {
+  margin: 0;
+  position: relative;
+  text-align: left;
+  border-top: 1px solid #1f0a42;
+  cursor: pointer;
+}
+
+#mainnav-mobi ul li a {
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#mainnav-mobi ul li a:hover {
+  color: #a579eb;
+}
+
+#mainnav-mobi .submenu li {
+  padding-left: 20px;
+}
+
+#mainnav-mobi .submenu a {
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px;
+  color: #c5c5c5;
+  text-transform: capitalize;
 }
 
 /* navigation */
@@ -785,11 +861,11 @@ pre tt:after {
 #mainnav .menu .has-sub:hover:before,
 #mainnav > ul > li > a:hover,
 #mainnav > ul > li.home > a {
-  color: var(--menuColor);
+  color: #2a0d58;
 }
 
 #mainnav > ul > li > a:hover {
-  color: var(--menuColor);
+  color: #2a0d58;
 }
 
 #mainnav > ul > li > a:hover:after,
@@ -877,7 +953,7 @@ pre tt:after {
 .btn-menu:before,
 .btn-menu:after,
 .btn-menu span {
-  background-color: var(--menuColor);
+  background-color: #2a0d58;
   -webkit-transition: all ease .238s;
   transition: all ease .238s;
 }
@@ -927,7 +1003,7 @@ pre tt:after {
 }
 
 #mainnav ul.submenu > li {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #1f0a42;
 }
 
 #mainnav ul.submenu > li a {
@@ -963,7 +1039,7 @@ pre tt:after {
 }
 
 #mainnav ul.submenu > li > a:hover {
-  background-color: var(--menuColor);
+  background-color: #2a0d58;
 }
 
 #mainnav ul.submenu > li.sub-parent:hover::after {
@@ -1002,10 +1078,8 @@ pre tt:after {
 :root {
   --principalColor: #E70F0F;
   --principalColorHigh: #c25850;
-  --menuColor: purple;
   --secondColor: black;
   --gray: #767676;
-  --menuBackground:  white;
   --menuFontColor:  black;
   --fontSizeBigX: 1.2rem;
   --fontSizeBig: 1rem;

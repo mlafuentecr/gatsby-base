@@ -14,6 +14,76 @@
     }
   }
 }
+.openDraw{
+  #mainnav-mobi{
+    display: flex;
+    width: 85vw;
+    transform:translateX(20vw);
+  }
+
+  .btn-menu span{
+    opacity: 0;
+  }
+  .btn-menu:before{
+    transform: rotate(-45deg);
+  } 
+
+  .btn-menu:after{
+    transform: rotate(45deg);
+  }
+
+}
+
+#mainnav-mobi{
+  margin: 0 auto;
+  width: 0vw;
+  transition: width 0.2s, height 0.6s;
+  position: absolute;
+  background-color: $menuColor;
+  z-index: 1000;
+  top: 100px;
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex: 1;
+      li {
+        margin: 0;
+        position: relative;
+        text-align: left;
+        border-top: 1px solid $menuDiv;
+   
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          height: 50px;
+          line-height: 50px;
+          padding: 0 50px;
+          color: #fff;
+          text-transform: uppercase;
+          &:hover{
+           color: $menuHover;  
+          }
+      }
+    }
+  }
+
+  .submenu{
+    li {
+      padding-left: 20px;
+    }
+      a {
+        text-decoration: none;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 50px;
+        color: #c5c5c5;
+        text-transform: capitalize;
+    }
+  }
+
+}
 
 /* navigation */
 .nav-wrap {
@@ -66,11 +136,11 @@
 #mainnav .menu .has-sub:hover:before,
 #mainnav > ul > li > a:hover,
 #mainnav > ul > li.home > a {
-    color: var(--menuColor);
+    color: $menuColor;
 }
 
 #mainnav > ul > li > a:hover {
-	color: var(--menuColor);
+	color: $menuColor;
 }
 
 #mainnav > ul > li > a:hover:after,
@@ -175,7 +245,7 @@
 .btn-menu:before,
 .btn-menu:after, 
 .btn-menu span {
-	background-color: var(--menuColor);
+	background-color: $menuColor;
     -webkit-transition: all ease .238s;
        -moz-transition: all ease .238s;
             transition: all ease .238s;
@@ -230,7 +300,8 @@
           top: 0 !important;
         }
         ul.submenu > li {
-          border-top: 1px solid #333333; 
+          border-top: 1px solid $menuDiv;
+        
 
           a {
             display: block;
@@ -267,7 +338,7 @@
 }
 
 #mainnav ul.submenu > li > a:hover {
-	background-color: var(--menuColor);
+	background-color: $menuColor;
 }
 
 #mainnav ul.submenu > li.sub-parent:hover::after {

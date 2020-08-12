@@ -5,10 +5,10 @@ const IndexPage = props => {
   return (
     <LayoutIndex>
       <div className="container mainText">
-        <div class="title-section">
-          <h4 class="title">Why Choose Us</h4>
+        <div className="title-section">
+          <h4 className="title">Why Choose Us</h4>
         </div>
-        <div class="post-choose">
+        <div className="post-choose">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad

@@ -1,10 +1,8 @@
 :root {
     --principalColor: #E70F0F;
     --principalColorHigh: #c25850;
-    --menuColor: purple;
     --secondColor: black;
-    --gray: #767676;
-    --menuBackground:  white;
+     --gray: #767676;
     --menuFontColor:  black;
     --fontSizeBigX: 1.2rem;
     --fontSizeBig: 1rem;
@@ -13,6 +11,12 @@
     --fontSizeSmallX: 0.6rem;
     --fontSizeSmallX: 0.4rem;
 }
+
+$menuColor: #2a0d58;
+$menuBackground: $menuColor;
+$menuHover: lighten($menuColor, 50%);
+$menuDiv: darken($menuColor, 5%);
+
 
 $smallPhone: 360px;
 $ipad: 768px;

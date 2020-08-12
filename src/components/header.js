@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 
 const Header = (props) => {
+const [draw, setDraw]=useState(false)
 
 const MenuItems = () =>{
   return(
@@ -73,7 +74,7 @@ const MenuItems = () =>{
                         </div>
 
                         <div className="nav-wrap">
-                            <div className="btn-menu">
+                            <div className="btn-menu" rel='drawIcon'>
                                 <span></span>
                             </div>
 
