@@ -1,6 +1,4 @@
 :root {
-    --principalColor: #E70F0F;
-    --principalColorHigh: #c25850;
     --secondColor: black;
      --gray: #767676;
     --menuFontColor:  black;
@@ -11,7 +9,8 @@
     --fontSizeSmallX: 0.6rem;
     --fontSizeSmallX: 0.4rem;
 }
-
+$principalColor: #E70F0F;
+$principalColorHigh: #c25850;
 $menuColor: #2a0d58;
 $menuBackground: $menuColor;
 $menuHover: lighten($menuColor, 50%);

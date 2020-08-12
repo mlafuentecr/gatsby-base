@@ -338,7 +338,7 @@
 }
 
 #mainnav ul.submenu > li > a:hover {
-	background-color: $menuColor;
+	color: $menuHover;
 }
 
 #mainnav ul.submenu > li.sub-parent:hover::after {
@@ -349,9 +349,7 @@
   display: none;
 }
 
-// .btn-menu{
-//   display: flex;
-// }
+
 
 /*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/
 /* --------- Desktop  si es mayor que $standard ------ */

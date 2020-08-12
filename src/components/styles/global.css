@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
 aside,
 details,
 figcaption,
@@ -699,8 +700,6 @@ pre tt:after {
 }
 
 :root {
-  --principalColor: #E70F0F;
-  --principalColorHigh: #c25850;
   --secondColor: black;
   --gray: #767676;
   --menuFontColor:  black;
@@ -1039,7 +1038,7 @@ pre tt:after {
 }
 
 #mainnav ul.submenu > li > a:hover {
-  background-color: #2a0d58;
+  color: #a579eb;
 }
 
 #mainnav ul.submenu > li.sub-parent:hover::after {
@@ -1076,8 +1075,6 @@ pre tt:after {
 }
 
 :root {
-  --principalColor: #E70F0F;
-  --principalColorHigh: #c25850;
   --secondColor: black;
   --gray: #767676;
   --menuFontColor:  black;
@@ -1095,8 +1092,46 @@ pre tt:after {
 }
 
 /*<!--=============== GENERAL STYLES  ===============-->*/
+h1 {
+  font-size: 48px;
+  margin-bottom: 27px;
+  font-weight: 600;
+  -webkit-transform: none;
+          transform: none;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #E70F0F;
+}
+
+.circleIcon {
+  width: 100px;
+  height: 100px;
+  background: #6a6a6a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+}
+
+.circleIcon svg {
+  width: 60%;
+  height: 60%;
+  fill: white;
+}
+
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-style: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
@@ -1120,7 +1155,6 @@ html {
 body {
   height: 100%;
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1156,6 +1190,10 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mainText {
@@ -1165,6 +1203,68 @@ main {
           flex-direction: column;
   position: relative;
   padding: 90px 15px;
+}
+
+.fullBox {
+  background-color: #e7ebee;
+  border-width: 0px 0px 0px 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-size: cover;
+}
+
+.color1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color1 div {
+  color: white;
+  background-color: #44405a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color1 svg {
+  fill: #44405a;
+  width: 200%;
+  height: 180px;
+}
+
+.color1.invert {
+  background-color: #44405a !important;
+}
+
+.color1.invert svg {
+  fill: white;
+}
+
+.color2 {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color2 svg {
+  fill: white;
+  background-color: #e7ebee;
+  width: 280%;
+  height: 80px;
 }
 
 /*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/

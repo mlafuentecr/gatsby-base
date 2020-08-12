@@ -2,12 +2,39 @@
 @import './menus';
 @import './variables';
 @import './headline';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
 
 /*<!--=============== GENERAL STYLES  ===============-->*/
-
+h1{
+    font-size: 48px;
+    margin-bottom: 27px;
+    font-weight: 600;
+    transform: none;
+    text-transform: uppercase;
+}
+h2{
+    color: $principalColor;
+}
+.circleIcon {
+    width: 100px;
+    height: 100px;
+    background: #6a6a6a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    svg{
+        width: 60%;
+        height: 60%;
+        fill: white;
+    }
+}
 html {
-    font-family: 'Lato', sans-serif;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-style: normal;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
@@ -24,7 +51,6 @@ html {
 body {
     height: 100%;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif;
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -57,6 +83,7 @@ body {
 main{
     display: flex;
     flex: 1;
+    flex-direction: column;
 }
 
 .mainText{
@@ -65,6 +92,65 @@ main{
     position: relative;
     padding: 90px 15px;
 }
+
+
+$gray:#e7ebee;
+
+.fullBox{
+    background-color: $gray;
+        border-width: 0px 0px 0px 0px;
+    border-color: #eae9e9;
+    border-style: solid;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.color1{
+    padding: 0px;
+    margin: 0px;
+
+
+    div{
+        color: white;
+        background-color: #44405a;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    svg{
+        fill: #44405a;
+        width: 200%;
+        height: 180px;
+    }
+    
+    &.invert{
+        background-color: #44405a!important;
+        svg{
+            fill: white;
+        }
+        
+    }
+}
+
+.color2{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    svg{
+        fill: white;
+        background-color: $gray;
+        width: 280%;
+        height: 80px;
+        //transform: scaleX(-1);
+    }
+    
+ 
+}
+
 
 /*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/
 
