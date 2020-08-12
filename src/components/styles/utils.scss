@@ -1,0 +1,122 @@
+@import './variables';
+
+/*<!--=============== GENERAL STYLES  ===============-->*/
+
+
+h1{
+  font-size: 48px;
+  margin-bottom: 27px;
+  font-weight: 600;
+  transform: none;
+  text-transform: uppercase;
+}
+h2{
+  color: $principalColor;
+}
+.full{
+  width: 100%;
+}
+#scrollDiv {
+  height: 25px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  width: 100%;
+  
+  justify-content: right;
+}
+#scrollTop {
+  background: #333;
+  width: 40px;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  right: 1%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  pointer-events: auto;
+  opacity: .9;
+  &:hover{
+      background: $menuHover; 
+  }
+}
+.hide{display: none;}
+.show{display: flex;}
+
+.hr{
+  overflow: hidden;
+}
+
+.circleIcon {
+  width: 100px;
+  height: 100px;
+  background: #6a6a6a;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  svg{
+      width: 60%;
+      height: 60%;
+      fill: white;
+  }
+}
+
+
+
+.hr-curve {
+  height: 200px;
+}
+$curveWidth: 200%;
+.color1{
+    padding: 0px;
+    margin: 0px;
+    div{
+        color: black;
+        background-color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .svgCurve{
+        fill: #44405a;
+        width: $curveWidth;
+        height: 180px;
+    }
+    
+    &.invert{
+        background-color: #44405a!important;
+        .svgCurve{
+            fill: white;
+        }
+    }
+}
+
+.color2{
+    padding: 0px;
+    margin: 0px;
+    div{
+      color: white;
+      background-color: $menuBackground;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      
+  }
+  
+      .svgCurve {
+        fill: white;
+        height: 100%;
+        width: $curveWidth;
+        background: $menuBackground;
+  }
+
+  &.invert{
+    background-color: #44405a!important;
+    .svgCurve{
+        fill: white;
+        transform: rotate(180deg);
+    }
+  }
+}
+

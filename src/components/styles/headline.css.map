@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,YAAY;AAEZ,AAAA,OAAO,CAAA;EACL,UAAU,EAAE,KAAK,CAAA,UAAU;CAC5B",
+    "mappings": "AAAA,YAAY;AAEZ,AAAA,OAAO,CAAA;EACL,UAAU,EAAE,KAAK,CAAA,UAAU;CAC5B;;AAAA,AAAA,gBAAgB,GAAG,GAAG,CAAC;EACtB,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,KAAK;CACb",
     "sources": [
         "headline.scss"
     ],

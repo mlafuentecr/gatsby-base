@@ -1086,9 +1086,16 @@ pre tt:after {
   --fontSizeSmallX: 0.4rem;
 }
 
-/*HEADLINE*/
-.awssld {
-  max-height: 500px !important;
+:root {
+  --secondColor: black;
+  --gray: #767676;
+  --menuFontColor:  black;
+  --fontSizeBigX: 1.2rem;
+  --fontSizeBig: 1rem;
+  --menuFontSize:  0.8rem;
+  --fontSizeRegular: 0.8rem;
+  --fontSizeSmallX: 0.6rem;
+  --fontSizeSmallX: 0.4rem;
 }
 
 /*<!--=============== GENERAL STYLES  ===============-->*/
@@ -1103,6 +1110,10 @@ h1 {
 
 h2 {
   color: #E70F0F;
+}
+
+.full {
+  width: 100%;
 }
 
 #scrollDiv {
@@ -1173,6 +1184,85 @@ h2 {
   fill: white;
 }
 
+.hr-curve {
+  height: 200px;
+}
+
+.color1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color1 div {
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color1 .svgCurve {
+  fill: #44405a;
+  width: 200%;
+  height: 180px;
+}
+
+.color1.invert {
+  background-color: #44405a !important;
+}
+
+.color1.invert .svgCurve {
+  fill: white;
+}
+
+.color2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color2 div {
+  color: white;
+  background-color: #2a0d58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color2 .svgCurve {
+  fill: white;
+  height: 100%;
+  width: 200%;
+  background: #2a0d58;
+}
+
+.color2.invert {
+  background-color: #44405a !important;
+}
+
+.color2.invert .svgCurve {
+  fill: white;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*HEADLINE*/
+.awssld {
+  max-height: 500px !important;
+}
+
+/*<!--=============== GENERAL STYLES  ===============-->*/
 html {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -1249,68 +1339,6 @@ main {
           flex-direction: column;
   position: relative;
   padding: 90px 15px;
-}
-
-.fullBox {
-  background-color: #e7ebee;
-  border-width: 0px 0px 0px 0px;
-  border-color: #eae9e9;
-  border-style: solid;
-  background-size: cover;
-}
-
-.color1 {
-  padding: 0px;
-  margin: 0px;
-}
-
-.color1 div {
-  color: white;
-  background-color: #44405a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.color1 svg {
-  fill: #44405a;
-  width: 200%;
-  height: 180px;
-}
-
-.color1.invert {
-  background-color: #44405a !important;
-}
-
-.color1.invert svg {
-  fill: white;
-}
-
-.color2 {
-  padding: 0px;
-  margin: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.color2 svg {
-  fill: white;
-  background-color: #e7ebee;
-  width: 280%;
-  height: 80px;
 }
 
 /*<!--=============== MEDIAQUERY BEGINGS  ===============-->*/

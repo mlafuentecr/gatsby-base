@@ -20,7 +20,8 @@ const SliderIndex = (props) => {
       play={true}
       cancelOnInteraction={false} // should stop playing on user interaction
       interval={56000}>
-      <div data-src="https://caferati.me/images/series/bojack-0.png" />
+      <div data-src="https://avada.theme-fusion.com/freelancer/wp-content/uploads/sites/58/2016/05/banner_images.jpg" ><p>The answer is -- Don't think about it.</p>
+    </div>
       <div data-src="https://caferati.me/images/series/bojack-4.jpg" />
       <div data-src="/slider/bojack-5.jpg" />
     </AutoplaySlider>

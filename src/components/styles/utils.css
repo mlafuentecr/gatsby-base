@@ -1,0 +1,171 @@
+:root {
+  --secondColor: black;
+  --gray: #767676;
+  --menuFontColor:  black;
+  --fontSizeBigX: 1.2rem;
+  --fontSizeBig: 1rem;
+  --menuFontSize:  0.8rem;
+  --fontSizeRegular: 0.8rem;
+  --fontSizeSmallX: 0.6rem;
+  --fontSizeSmallX: 0.4rem;
+}
+
+/*<!--=============== GENERAL STYLES  ===============-->*/
+h1 {
+  font-size: 48px;
+  margin-bottom: 27px;
+  font-weight: 600;
+  -webkit-transform: none;
+          transform: none;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #E70F0F;
+}
+
+.full {
+  width: 100%;
+}
+
+#scrollDiv {
+  height: 25px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#scrollTop {
+  background: #333;
+  width: 40px;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  pointer-events: auto;
+  opacity: .9;
+}
+
+#scrollTop:hover {
+  background: #a579eb;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hr {
+  overflow: hidden;
+}
+
+.circleIcon {
+  width: 100px;
+  height: 100px;
+  background: #6a6a6a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+}
+
+.circleIcon svg {
+  width: 60%;
+  height: 60%;
+  fill: white;
+}
+
+.hr-curve {
+  height: 200px;
+}
+
+.color1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color1 div {
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color1 .svgCurve {
+  fill: #44405a;
+  width: 200%;
+  height: 180px;
+}
+
+.color1.invert {
+  background-color: #44405a !important;
+}
+
+.color1.invert .svgCurve {
+  fill: white;
+}
+
+.color2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.color2 div {
+  color: white;
+  background-color: #2a0d58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.color2 .svgCurve {
+  fill: white;
+  height: 100%;
+  width: 200%;
+  background: #2a0d58;
+}
+
+.color2.invert {
+  background-color: #44405a !important;
+}
+
+.color2.invert .svgCurve {
+  fill: white;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=utils.css.map */
