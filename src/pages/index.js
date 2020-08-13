@@ -12,14 +12,6 @@ const IndexPage = props => {
   }
 
 
- 
-
-
-
-
-
-
-
   return (
     <LayoutIndex>
       <div className="section color1">

@@ -10,7 +10,6 @@ const LayoutIndex = ({ children }) => {
   return (
       <div className={`pgInternal wrapper`}    onClick={handleChick}>
         <Header logoUrl='/logo.jpg' siteTitle='' />
-        <SliderIndex />
         <main>{children}</main>
         <Footer/>
       </div>

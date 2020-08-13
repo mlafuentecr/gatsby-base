@@ -77,7 +77,7 @@ $curveWidth: 200%;
 .color1{
     padding: 0px;
     margin: 0px;
-    div{
+    &>div{
         color: black;
         background-color: white;
         display: flex;

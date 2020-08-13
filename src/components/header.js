@@ -20,7 +20,9 @@ const MenuItems = () =>{
             <li><a href="index-v7.html">Home 07</a></li>
         </ul>
     </li>
-    <li><a href="overview.html">About Us</a></li> 
+    <li>
+
+    <Link to="page-2">About Us</Link></li> 
     <li><a href="services.html">Services</a>
         <ul className="submenu">
             <li><a href="services.html">Services</a></li>

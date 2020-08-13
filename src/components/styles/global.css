@@ -1198,7 +1198,7 @@ h2 {
   margin: 0px;
 }
 
-.color1 div {
+.color1 > div {
   color: black;
   background-color: white;
   display: -webkit-box;
