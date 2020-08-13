@@ -2,7 +2,8 @@
 
 .awssld{
   max-height: 500px!important;
-}.awssld__content > div {
-  z-index: 99;
+}
+.awssld__content > div {
+  z-index: 999;
   color: white;
 }

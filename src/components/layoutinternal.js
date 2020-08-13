@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react'
-
 import Header from './header'
 import Footer from './footer'
+import './styles/global.css'
+import SliderIndex from '../components/SliderIndex'
 
+import handleChick from './handleClick'
 
-  export default function LayoutIndex({ children }) {
-    return (
-      <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>
-        {children}
+const LayoutIndex = ({ children }) => {
+  return (
+      <div className={`pgInternal wrapper`}    onClick={handleChick}>
+        <Header logoUrl='/logo.jpg' siteTitle='' />
+        <SliderIndex />
+        <main>{children}</main>
+        <Footer/>
       </div>
-    )
-  }
+  )
+}
 
-
+export default LayoutIndex

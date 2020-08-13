@@ -24,6 +24,11 @@ h2 {
   color: #E70F0F;
 }
 
+.title-section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .full {
   width: 100%;
 }

@@ -1112,6 +1112,11 @@ h2 {
   color: #E70F0F;
 }
 
+.title-section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .full {
   width: 100%;
 }
@@ -1260,6 +1265,11 @@ h2 {
 /*HEADLINE*/
 .awssld {
   max-height: 500px !important;
+}
+
+.awssld__content > div {
+  z-index: 999;
+  color: white;
 }
 
 /*<!--=============== GENERAL STYLES  ===============-->*/
